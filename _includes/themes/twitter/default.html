@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }} - {{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -51,6 +51,9 @@
 		  {% assign pages_list = site.pages %}
 		  {% assign group = 'navigation' %}
 		  {% include JB/pages_list %}
+      {% assign pages_list = site.pages %}
+      {% assign group = 'about' %}
+      {% include JB/pages_list %}
 		</ul>
 	  </div><!-- /.navbar-collapse -->
 	</nav>
@@ -62,14 +65,15 @@
       </div>
       <hr>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <p>{{ site.version }} &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a>
+          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>
       </footer>
 
     </div>
-
+    <script src="//codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
     {% include JB/analytics %}
   </body>
 </html>

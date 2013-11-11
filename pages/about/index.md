@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-tagline: "site.author.name"
+tagline: "Benny Thomas"
 description: ""
 group: about
 ---

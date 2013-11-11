@@ -13,7 +13,7 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 
 In `_config.yml` remember to specify your own data:
 
-```    
+{% highlight ruby linenos %}
     title : My Blog =)
     
     author :
@@ -21,7 +21,7 @@ In `_config.yml` remember to specify your own data:
       email : blah@email.test
       github : username
       twitter : username
-```
+{% endhighlight %}
 
 The theme should reference these variables whenever needed.
 
